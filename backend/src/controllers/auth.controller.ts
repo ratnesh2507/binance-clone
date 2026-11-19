@@ -1,5 +1,5 @@
 import { type Request, type Response } from "express";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { User } from "../models/user.model";
 import { signinSchema, signupSchema } from "../utils/validation";
 import { createSession, clearSession } from "../utils/session";
